@@ -4,7 +4,7 @@ import firebase from "./components/Firestore";
 import TodoItems from "./components/TodoItems";
 import TodoList from "./components/TodoList";
 
-function App() {
+export default function App() {
   const db = firebase.firestore();
   var docRef = db.collection("todos").doc("actions");
   const [todos, setTodos] = useState([]);
@@ -78,5 +78,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
