@@ -23,7 +23,7 @@ export default function App() {
       .catch(function (error) {
         console.log("Error getting document:", error);
       });
-  }, []);
+  }, []); // eslint-disable-line
 
   const addItem = (text) => {
     const addedItem = {
